@@ -49,5 +49,16 @@ namespace BakeryVendorTracker.Tests
       List<Vendor> returnValue = Vendor.GetAll();
       CollectionAssert.AreEqual(newVendorList, returnValue);
     }
+
+    [TestMethod]
+    public void VendorFind_ReturnsCorrespsondingVendorById_Vendor()
+    {
+      string vendorName01 = "Crestmont Croissant";
+      string vendorName02 = "Ted's Bread's";
+      Vendor newVendor01 = new Vendor(vendorName01);
+      Vendor newVendor02 = new Vendor(vendorName02);
+      Vendor returnValue = Vendor.Find(1);
+      Assert.AreEqual(newVendor02, returnValue);
+    }
   }
 }

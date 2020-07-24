@@ -10,7 +10,7 @@ namespace BakeryVendorTracker.Controllers
     public ActionResult Show(int vendorId, int orderId)
     {
       Vendor vendor = Vendor.Find(vendorId);
-      Order order = Orders.Find(orderId);
+      Order order = Order.Find(orderId);
       Dictionary<string, object> model = new Dictionary<string, object>();
       model.Add("order", order);
       model.Add("vendor", vendor);

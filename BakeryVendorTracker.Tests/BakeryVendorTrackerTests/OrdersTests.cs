@@ -116,5 +116,22 @@ namespace BakeryVendorTracker.Tests
       int returnValue = newOrder.OrderPrice;
       Assert.AreEqual(updateOrderPrice, returnValue);
     }
+    [TestMethod]
+    public void GetAllOrders_ReturnsAllInstancesOfOrder_OrderList()
+    {
+      string orderTitle01 = "Ted's Bread Order01";
+      string orderDescription01 = "10 loaves of Soughdough";
+      string orderDate01 = "07/25/2020";
+      int orderPrice01 = 2;
+      string orderTitle02 = "Crestmont Croissant01";
+      string orderDescription02 = "23 Croissants";
+      string orderDate02 = "07/25/2020";
+      int orderPrice02 = 12;
+      Order newOrder01 = new Order(orderTitle01, orderDescription01, orderDate01, orderPrice01);
+      Order newOrder02 = new Order(orderTitle02, orderDescription02, orderDate02, orderPrice02);
+      List<Order> newOrderList = new List<Order> { newOrder01, newOrder02 };
+      List<Order> returnResult = Order.GetAll();
+      CollectionAssert.AreEqual(newOrderList, returnResult);
+    }
   }
 }

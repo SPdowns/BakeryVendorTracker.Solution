@@ -1,3 +1,16 @@
 <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
 
 @using BakeryVendorTracker.Models
+
+<h2>@vender.VendorName Orders<h2>
+
+<ol>
+  @foreach (Order order in @Model["orders"])
+  {
+    <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.OrderDescription</a></li>
+  }
+</ol>
+
+<p><a href='/vendor/@Model["vendor"].VendorId/orders/new'>Add New Order</a></p>
+<p><a href='/vendor'>Return to Vendor List</a></p>
+<p><a href='/'>Return to Home Page</a><p>

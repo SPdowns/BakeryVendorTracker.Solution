@@ -81,8 +81,12 @@ namespace BakeryVendorTracker.Tests
 
     public void AddOrder_AssociatesOrderWithVendor_OrderList()
     {
-      string orderItems = "10 loaves of Soughdough";
-      Order newOrder = new List<Order> { orderItems };
+      string orderTitle = "Ted's Bread Order01";
+      string orderDescription = "10 loaves of Soughdough";
+      string orderDate = "07/25/2020";
+      int orderPrice = 2;
+      Order newOrder = new Order(orderTitle, orderDescription, orderDate, orderPrice);
+      List<Order> newOrderList = new List<Order>{ newOrder };
       string vendorName = "Ted's Breads";
       string vendorDescription = "Very Good Breads";
       Vendor newVendor = new Vendor(vendorName, vendorDescription);

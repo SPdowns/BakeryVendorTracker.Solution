@@ -45,7 +45,7 @@ Running the program:
 
 ## Bugs
 
-None at this time
+Routes aren't connecting in spots
 
 ## Tech used
 

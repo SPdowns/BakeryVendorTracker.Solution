@@ -45,9 +45,7 @@ Running the program:
 
 ## Bugs
 
-Controllers/OrdersController.cs(13,21): error CS0103: The name 'Orders' does not exist in the current context [/Users/seandowns/epicodus/BakeryVendorTracker.Solution/BakeryVendorTracker/BakeryVendorTracker.csproj]
-Models/Order.cs(38,14): error CS0029: Cannot implicitly convert type 'BakeryVendorTracker.Models.Order' to 'BakeryVendorTracker.Models.Vendor' [/Users/seandowns/epicodus/BakeryVendorTracker.Solution/BakeryVendorTracker/BakeryVendorTracker.csproj]
-Models/Order.cs(42,7): error CS0103: The name 'Orders' does not exist in the current context [/Users/seandowns/epicodus/BakeryVendorTracker.Solution/BakeryVendorTracker/BakeryVendorTracker.csproj]
+None at this time
 
 ## Tech used
 

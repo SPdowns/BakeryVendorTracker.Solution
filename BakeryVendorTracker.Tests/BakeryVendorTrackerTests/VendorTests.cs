@@ -17,7 +17,7 @@ namespace BakeryVendorTracker.Tests
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
       Vendor newVendor = new Vendor("Crestmont Croissant");
-      Assert.AreEqual(typeof(Vendor), newVendor.GetType);
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
   }
 }

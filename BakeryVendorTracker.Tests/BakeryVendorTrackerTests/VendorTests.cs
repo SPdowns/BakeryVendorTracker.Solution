@@ -10,7 +10,7 @@ namespace BakeryVendorTracker.Tests
   {
     public void Dispose()
     {
-      Category.ClearAll();
+      Vendor.ClearAll();
     }
 
     [TestMethod]

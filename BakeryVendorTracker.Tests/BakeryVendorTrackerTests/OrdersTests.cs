@@ -5,9 +5,9 @@ using System;
 
 namespace BakeryVendorTracker.Tests
 {
-  [TestClass]
-  public class OrdersTest : IDisposable
-  {
+  // [TestClass]
+  // public class OrdersTest : IDisposable
+  // {
 
-  }
+  // }
 }

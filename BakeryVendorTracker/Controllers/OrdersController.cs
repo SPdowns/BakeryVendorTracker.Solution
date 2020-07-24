@@ -16,5 +16,22 @@ namespace BakeryVendorTracker.Controllers
       model.Add("vendor", vendor);
       return View(model);
     }
+    [HttpGet("/orders/new")]
+    public ActionResult CreateForm()
+    {
+      return View();
+    }
+    [HttpGet("/orders")]
+    public ActionResult Create(string orderTitle, string orderDescription, string orderDate, int orderPrice)
+    {
+      Order newOrder = new Order(orderTitle, orderDescription, orderDate, orderPrice);
+      return RedirectToAction("Index");
+    }
+    [HttpGet("/vendors/{vendorId}/orders/new")]
+    public ActionResult New(int vendorId)
+    {
+      Vendor vendor = Vendor.Find(vendorId);
+      return View(vendor);
+    }
   }
 }

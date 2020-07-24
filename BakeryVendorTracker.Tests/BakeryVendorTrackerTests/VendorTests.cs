@@ -6,7 +6,7 @@ using System;
 namespace BakeryVendorTracker.Tests
 {
   [TestClass]
-  public class VendorTest : IDisosable
+  public class VendorTest : IDisposable
   {
     public void Dispose()
     {

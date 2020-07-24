@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 
-namespace BakeryVendorTracker
+namespace BakeryVendorTracker.Models
 {
   public class Vendor
   {
-
+    
   }
 }

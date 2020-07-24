@@ -1,1 +1,9 @@
 <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+
+<h1>Order Details: </h1>
+
+<h2>@Model["order"].OrderTitle</h2>
+<h3>Category: @Model["vendor"].VendorName</h3>
+
+<a href='/vendors/@Model["vednor"].VendorId/orders/new'>Add another item</a>
+<a href='/categories'>View all categories</a>

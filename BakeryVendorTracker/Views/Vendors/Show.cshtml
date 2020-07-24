@@ -2,7 +2,7 @@
 
 @using BakeryVendorTracker.Models
 
-<h2>@vender.VendorName Orders<h2>
+<h2>@Model["vendor"].VendorName Orders<h2>
 
 <ol>
   @foreach (Order order in @Model["orders"])

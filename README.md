@@ -13,13 +13,17 @@ This application will track the vendors that purchase baked goods from Francious
     * **Input Example:** Click to add vendor
     * **Output Example:** Crestmont Croissant
 
-2. **Behavior:** The user will be able to add orders to the vendor object
-    * **Input Example:** Add 40 bagels
-    * **Output Example:** 
+2. **Behavior:** The user will be able to add orders with title, description, date, and price to the vendor object
+    * **Input Example:** Crestmont Croissant Order, 40 croissants, 07/25/2020, 18
+    * **Output Example:** Vendor Order
 
-3. **Behavior:**
-    * **Input Example:**
-    * **Output Example:**
+3. **Behavior:** The user will be able to delete orders.
+    * **Input Example:** Delete Order
+    * **Output Example:** Order Deleted
+
+4. **Behavior:** The user will be able to delete Vendors
+    * **Input Example:** Delete Vendor
+    * **Output Example:** Vendor Deleted
 
 ## Setup and Installation
 
@@ -46,10 +50,13 @@ No bugs
 ## Tech used
 
 * C#
-* .NET
+* ASP.NET Core MVC
+* CSHTML
+* CSS
+
 
 ### License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-Copyright (c) 2020 Deryck Jackson, Spencer Moody, Sean Downs
+Copyright (c) 2020 Sean Downs

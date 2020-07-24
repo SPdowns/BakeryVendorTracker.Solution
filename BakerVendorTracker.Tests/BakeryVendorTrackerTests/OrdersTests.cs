@@ -6,7 +6,7 @@ using System;
 namespace BakerVendorTracker.Tests
 {
   [TestClass]
-  public class VendorTest : IDisposable
+  public class OrdersTest : IDisposable
   {
 
   }

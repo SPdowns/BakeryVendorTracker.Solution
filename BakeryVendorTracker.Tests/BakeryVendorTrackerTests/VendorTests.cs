@@ -35,7 +35,7 @@ namespace BakeryVendorTracker.Tests
       string vendorName = "Crestmont Croissant";
       Vendor newVendor = new Vendor(vendorName);
       int returnValue = newVendor.VendorId;
-      Assert.AreEqual(2, returnValue);
+      Assert.AreEqual(1, returnValue);
     }
   }
 }

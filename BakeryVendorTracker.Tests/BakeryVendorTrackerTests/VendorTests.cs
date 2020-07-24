@@ -57,7 +57,7 @@ namespace BakeryVendorTracker.Tests
       string vendorName02 = "Ted's Bread's";
       Vendor newVendor01 = new Vendor(vendorName01);
       Vendor newVendor02 = new Vendor(vendorName02);
-      Vendor returnValue = Vendor.Find(1);
+      Vendor returnValue = Vendor.Find(2);
       Assert.AreEqual(newVendor02, returnValue);
     }
   }

@@ -133,5 +133,12 @@ namespace BakeryVendorTracker.Tests
       List<Order> returnResult = Order.GetAll();
       CollectionAssert.AreEqual(newOrderList, returnResult);
     }
+    [TestMethod]
+    public void GetAllOrders_ReturnsAnEmptyList_OrderList()
+    {
+      List<Order> newOrderList = new List<Order>{};
+      List<Order> returnResult = Order.GetAll();
+      CollectionAssert.AreEqual(newOrderList, returnResult);
+    }
   }
 }

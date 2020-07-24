@@ -18,7 +18,17 @@ namespace BakeryVendorTracker.Models
 
     public Order(string orderTitle, string orderDescription, string orderDate, int orderPrice)
     {
-      
+      OrderTitle = orderTitle;
+      OrderDescription = orderDescription;
+      OrderDate = orderDate;
+      OrderPrice = orderPrice;
+      _instances.Add(this);
+      OrderId = _instances.Count;
     }
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
+    
   }
 }

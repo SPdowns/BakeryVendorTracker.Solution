@@ -64,5 +64,57 @@ namespace BakeryVendorTracker.Tests
       int returnValue = newOrder.OrderPrice;
       Assert.AreEqual(orderPrice, returnValue);
     }
+    [TestMethod]
+    public void SetOrderTitle_SetOrderTitle_String()
+    {
+      string orderTitle = "Ted's Bread Order01";
+      string orderDescription = "10 loaves of Soughdough";
+      string orderDate = "07/25/2020";
+      int orderPrice = 2;
+      Order newOrder = new Order(orderTitle, orderDescription, orderDate, orderPrice);
+      string updateOrderTitle = "Ted's Bread Order01";
+      newOrder.OrderTitle = updateOrderTitle;
+      string returnValue = newOrder.OrderTitle;
+      Assert.AreEqual(updateOrderTitle, returnValue);
+    }
+    [TestMethod]
+    public void SetOrderDescription_SetOrderDescription_String()
+    {
+      string orderTitle = "Ted's Bread Order01";
+      string orderDescription = "10 loaves of Soughdough";
+      string orderDate = "07/25/2020";
+      int orderPrice = 2;
+      Order newOrder = new Order(orderTitle, orderDescription, orderDate, orderPrice);
+      string updateOrderDescription = "5 loaves of Soughdough";
+      newOrder.OrderDescription = updateOrderDescription;
+      string returnValue = newOrder.OrderDescription;
+      Assert.AreEqual(updateOrderDescription, returnValue);
+    }
+    [TestMethod]
+    public void SetOrderDate_SetOrderDate_String()
+    {
+      string orderTitle = "Ted's Bread Order01";
+      string orderDescription = "10 loaves of Soughdough";
+      string orderDate = "07/25/2020";
+      int orderPrice = 2;
+      Order newOrder = new Order(orderTitle, orderDescription, orderDate, orderPrice);
+      string updateOrderDate = "07/26/2020";
+      newOrder.OrderDate = updateOrderDate;
+      string returnValue = newOrder.OrderDate;
+      Assert.AreEqual(updateOrderDate, returnValue);
+    }
+    [TestMethod]
+    public void SetOrderPrice_SetOrderPrice_Int()
+    {
+      string orderTitle = "Ted's Bread Order01";
+      string orderDescription = "10 loaves of Soughdough";
+      string orderDate = "07/25/2020";
+      int orderPrice = 2;
+      Order newOrder = new Order(orderTitle, orderDescription, orderDate, orderPrice);
+      int updateOrderPrice = 105;
+      newOrder.OrderPrice = updateOrderPrice;
+      int returnValue = newOrder.OrderPrice;
+      Assert.AreEqual(updateOrderPrice, returnValue);
+    }
   }
 }

@@ -15,7 +15,7 @@ This application will track the vendors that purchase baked goods from Francious
 
 2. **Behavior:** The user will be able to add orders to the vendor object
     * **Input Example:** Add 40 bagels
-    * **Output Example:**
+    * **Output Example:** 
 
 3. **Behavior:**
     * **Input Example:**

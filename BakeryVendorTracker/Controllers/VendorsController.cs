@@ -18,7 +18,7 @@ namespace BakeryVendorTracker.Controllers
     {
       return View();
     }
-    [HttpGet("/vendors")]
+    [HttpPost("/vendors")]
     public ActionResult Create(string vendorName, string vendorDescription)
     {
       Vendor newVendor = new Vendor(vendorName, vendorDescription);

@@ -17,14 +17,14 @@ namespace BakeryVendorTracker.Controllers
       return View(model);
     }
     [HttpGet("/orders/new")]
-    public ActionResult CreateForm()
+    public ActionResult Show()
     {
       return View();
     }
     [HttpGet("/orders")]
     public ActionResult Create(string orderTitle, string orderDescription, string orderDate, int orderPrice)
     {
-      Order newOrder = new Order(orderTitle, orderDescription, orderDate, orderPrice);
+      Order myOrder = new Order(orderTitle, orderDescription, orderDate, orderPrice);
       return RedirectToAction("Index");
     }
     [HttpGet("/vendors/{vendorId}/orders/new")]

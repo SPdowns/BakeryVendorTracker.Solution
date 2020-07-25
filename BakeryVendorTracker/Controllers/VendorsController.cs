@@ -24,7 +24,7 @@ namespace BakeryVendorTracker.Controllers
       Vendor newVendor = new Vendor(vendorName, vendorDescription);
       return RedirectToAction("Index");
     }
-    [HttpGet("/vendors.{id}")]
+    [HttpGet("/vendors/{id}")]
     public ActionResult Show(int vendorId)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();

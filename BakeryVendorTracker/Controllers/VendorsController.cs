@@ -34,7 +34,7 @@ namespace BakeryVendorTracker.Controllers
       model.Add("orders", vendorOrders);
       return View(model);
     }
-    [HttpGet("/vendors/{nextVendorId}/orders")]
+    [HttpPost("/vendors/{nextVendorId}/orders")]
     public ActionResult Create(int nextVendorId, string orderTitle, string orderDescription, string orderDate, int orderPrice)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
@@ -43,7 +43,7 @@ namespace BakeryVendorTracker.Controllers
       foundVendor.AddOrder(newOrder);
       List<Order> vendorOrders = foundVendor.Orders;
       model.Add("orders", vendorOrders);
-      model.Add("vendors", foundVendor);
+      model.Add("vendor", foundVendor);
       return View("Show", model);
     }
   }

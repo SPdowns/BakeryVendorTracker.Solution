@@ -4,7 +4,7 @@
 
 @using BakeryVendorTracker.Models
 
-<h2>Orders<h2>
+<h3>Orders</h3>
 
 <ol>
   @foreach (Order order in @Model["orders"])
@@ -13,6 +13,6 @@
   }
 </ol>
 
-<p><a href='/vendors/@Model["vendor"].VendorId/orders/new'>Add New Order</a></p>
-<p><a href='/vendors'>Return to Vendor List</a></p>
-<p><a href='/'>Return to Home Page</a><p>
+<button><a href='/vendors/@Model["vendor"].VendorId/orders/new'>Add New Order</a></button>
+<button><a href='/vendors'>Return to Vendor List</a></button>
+<button><a href='/'>Return to Home Page</a></button>

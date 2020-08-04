@@ -5,14 +5,14 @@
 @using BakeryVendorTracker.Models
 
 <h3>Order list for </h3>
-<ul>
+
 @if (Model.Count == 0)
   {
-  <h5>There are no items in the list.</h5>
+  <h5>There are no orders in the list.</h5>
   }
 @foreach (Order order in Model)
   {
-      <li>@order.OrderDescription</li>
+      <p>@order.OrderDescription</p>
   }
-</ul>
+  
 <button><a href="/orders/new">Add a new order.</a></button>
